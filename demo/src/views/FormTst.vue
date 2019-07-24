@@ -1,7 +1,6 @@
 <template>
   <div class="ion-page">
-    <ion-content class="ion-padding">
-      <h1 style="text-align: center">Form v-model test</h1>
+    <ion-content fullscreen>
       <form @submit.prevent="submitForm">
         <ion-list>
           <ion-item>
@@ -16,7 +15,7 @@
             </IonSelectVue>
           </ion-item>
           <ion-item>
-            <ion-label position="stacked">Date</ion-label>
+            <ion-label position="fixed">Date</ion-label>
             <IonDatetimeVue v-model="user.date" />
           </ion-item>
           <ion-item>
@@ -67,6 +66,7 @@ export default {
   },
   data() {
     return {
+      title: 'Form v-model test',
       user: {
         name: 'Max',
         address: 'Home',

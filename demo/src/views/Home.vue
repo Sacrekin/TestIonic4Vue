@@ -1,6 +1,6 @@
 <template>
   <div class="ion-page">
-    <ion-content class="ion-padding">
+    <ion-content fullscreen>
       <div class="center">
         <h1>Welcome To @ionic/vue</h1>
         <img alt="Vue logo" src="../assets/logo.png">
@@ -12,7 +12,12 @@
 <script>
 export default {
   name: "home",
-};
+    data() {
+    return {
+      title: 'Vue Boilerplate App'
+      }
+    }
+}
 </script>
 
 <style scoped>

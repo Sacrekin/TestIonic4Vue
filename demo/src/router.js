@@ -15,18 +15,19 @@ export default new IonicVueRouter({
     component: Layout,
     children: [
       {
-        path: '',
-        //name: 'home',
-        component: Home
+        path: '/',
+        redirect: {name: 'home'},
       },
       {
         path: '/Home',
-        //name: 'home',
+        meta: {title: 'Demo Test App'},
+        name: 'home',
         component: Home
       },
       {
         path: '/Formtst',
-        //name: 'form',
+        meta: {title: 'V-Model Test'},
+        name: 'form',
         component: FormTst,
       }]
     }]

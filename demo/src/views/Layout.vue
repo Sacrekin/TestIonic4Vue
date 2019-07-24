@@ -29,7 +29,7 @@
                     </ion-button>
                 </ion-menu-toggle>
                 </ion-buttons>
-                <ion-title style="text-align: center">Vue Boilerplate App</ion-title>
+                <ion-title style="text-align: center">{{$route.meta.title}}</ion-title>
             </ion-toolbar>
         </ion-header>
         <ion-content padding>
